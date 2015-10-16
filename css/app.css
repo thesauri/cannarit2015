@@ -2,6 +2,10 @@
   text-align: center
 }
 
+cite {
+  float: right;
+}
+
 .cover {
   background-image: url("../img/background.png");
   background-repeat: repeat;
@@ -9,6 +13,14 @@
 
 .logo {
   margin-top: 25%
+}
+
+q {
+
+}
+
+.quote {
+  
 }
 
 .full-width {

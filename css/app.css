@@ -1,6 +1,11 @@
 .alladin-lamp {
-  width: auto;
-  height: 60px;
+  margin-top: 32px;
+  height: 32px;
+  margin-bottom: 32px;
+}
+
+body {
+  font-family: "Droid Sans", sans-serif;
 }
 
 .center-content {
@@ -14,6 +19,10 @@ cite {
 .cover {
   background-image: url("../img/background.png");
   background-repeat: repeat;
+}
+
+h2 {
+  font-family: "Droid Sans", sans-serif;
 }
 
 .full-width {

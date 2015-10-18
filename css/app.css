@@ -1,12 +1,98 @@
+.alladin-lamp {
+  margin-top: 32px;
+  height: 32px;
+  margin-bottom: 32px;
+}
+
+body {
+  font-family: "Droid Sans", sans-serif;
+}
+
+.center-content {
+  text-align: center;
+}
+
+cite {
+  float: right;
+}
+
+.cover {
+  height: 100%;
+  background-image: url("../img/background.png");
+  background-repeat: repeat;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-family: "Droid Sans", sans-serif;
+}
+
 .full-width {
   width: 100%;
-  height: 100%;
   margin-left: auto;
   margin-right: auto;
   max-width: initial;
 }
 
-.cover {
-  background-image: url("../img/background.png");
-  background-repeat: repeat;
+.horse {
+  height: 20%;
+  background-color: black;
+}
+
+.logo {
+  margin-top: 25%
+}
+
+/* Only apply margins between quotes if its a mobile device: http://foundation.zurb.com/docs/media-queries.html */
+@media only screen and (max-width: 40em) {
+  .quote-margin {
+    margin-bottom: 25px;
+  }
+}
+
+.quotes {
+  margin: 40px 0 40px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url("../img/lightning.jpg");
+  color: white;
+}
+
+.row.last {
+  margin-bottom: 20px;
+}
+
+section.top-bar-section {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 40em) {
+  section.top-bar-section {
+    width: 100%;
+  }
+}
+
+.top-bar {
+  text-align: center;
+}
+
+.top-bar, .top-bar-section ul li, .top-bar-section li:not(.has-form) a:not(.button) {
+  background: none;
+}
+
+@media only screen and (max-width: 40em) {
+  .top-bar-section li:not(.has-form) a:not(.button) {
+    background: #353535;
+    width: 100%;
+  }
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+    background: none;
+}
+
+
+.top-bar-section ul li > a {
+  font-size: 1.5rem;
+  font-family: "Droid Sans", sans-serif;
 }

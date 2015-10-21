@@ -87,6 +87,18 @@ h2 {
   opacity: 0;
 }
 
+@media screen and (max-width: 40em) {
+  .img-logo {
+    max-width: 100%;
+  }
+}
+
+.img-logo {
+  min-width: 20rem;
+  max-width: 60%;
+  transform: translateY(-5%);
+}
+
 /* Only apply margins between quotes if its a mobile device: http://foundation.zurb.com/docs/media-queries.html */
 @media only screen and (max-width: 40em) {
   .quote-margin {

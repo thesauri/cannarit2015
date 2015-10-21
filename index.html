@@ -8,18 +8,27 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/app.css">
-  
-  <script src="js/vendor/modernizr.js"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="js/ScrollMagic.min.js"></script>
+  <script type="text/javascript" src="js/TweenMax.min.js"></script>
+  <script type="text/javascript" src="js/vendor/modernizr.js"></script>
 </head>
 <body>
+  <script>
+	// init controller
+	 var controller = new ScrollMagic.Controller();
+  </script>
+
   <div class="cover full-width">
     <ul class="language-links">
       <li><a href="#fi">fi</a></li>
       <li><a href="#sv">sv</a></li>
       <li><a href="#en">en</a></li>
     </ul>
-    <div class="logo">
-      <img src="img/logo-fullhd.png" alt="Cännärit 2015 logo">
+    <div id="logo">
+      <img src="img/logo-fullhd.png" class="img-logo" alt="Cännärit 2015 logo">
     </div>
   </div>
 </div>
@@ -69,7 +78,12 @@
   <script src="js/vendor/jquery.js"></script>
   <script src="js/foundation.min.js"></script>
   <script>
-  $(document).foundation();
+    $(document).foundation();
+
+    var scene = TweenMax.fromTo("#logo", 1.5,
+      {transform: 'scale(0.5)', opacity: 0},
+       {transform: 'scale(1)', opacity: 1},
+       Cubic.easeInOut);
   </script>
 </body>
 </html>

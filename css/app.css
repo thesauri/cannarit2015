@@ -35,9 +35,15 @@ cite {
 
 .cover {
   height: 100%;
-  background-image: url("../img/background.png");
-  background-repeat: repeat;
+  background: url("../img/background-fullhd.jpg") no-repeat center bottom;
+  background-size: cover;
   margin-bottom: 15px;
+}
+
+@media screen and (min-height: 1081px) {
+  .cover {
+    background-image: url("../img/background-4k.jpg")
+  }
 }
 
 h2 {

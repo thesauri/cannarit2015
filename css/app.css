@@ -63,7 +63,7 @@ h2 {
 }
 
 .logo {
-  margin-top: 25%
+  text-align: center;
 }
 
 /* Only apply margins between quotes if its a mobile device: http://foundation.zurb.com/docs/media-queries.html */

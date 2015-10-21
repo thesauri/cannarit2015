@@ -9,18 +9,21 @@
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/app.css">
 
+  <noscript>
+  <style>
+  #logo {
+    opacity: 1;
+    transform: translateY("-5%");
+  }
+  </style>
+</noscript>
+
   <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
 
   <script type="text/javascript" src="js/TweenMax.min.js"></script>
-  <script type="text/javascript" src="js/ScrollMagic.min.js"></script>
   <script type="text/javascript" src="js/vendor/modernizr.js"></script>
 </head>
 <body>
-  <script>
-  // init controller
-  var controller = new ScrollMagic.Controller();
-  </script>
-
   <div class="cover full-width">
     <ul class="language-links">
       <li><a href="#fi">fi</a></li>
@@ -77,6 +80,7 @@
 
   <script src="js/vendor/jquery.js"></script>
   <script src="js/foundation.min.js"></script>
+  <script src="js/jquery.waitforimages.min.js"></script>
   <script>
   $(document).foundation();
 
@@ -88,22 +92,17 @@
     $(".cover").height(jQuery(window).height());
   });
 
-  var bgurl = $(".cover").css("background-image");
-  bgurl = bgurl.replace("url(","").replace(")","");
-
-  $("<img/>").attr("src", bgurl).load(function() {
-    $(this).remove();
-    $("#img-logo").on("load",function() {
+  $("#img-logo").waitForImages(function() {
+    $(".cover").waitForImages(function() {
       setTimeout(function() {
         TweenMax.fromTo("#logo", 1.5,
         {scale:0.5, y:0, opacity: 0},
         {scale:1, y:"-10%", opacity: 1},
         Cubic.easeInOut);
       },150);
-    }).each(function() {
-      if(this.complete) $(this).load();
     });
   });
+
 
 
   </script>

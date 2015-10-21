@@ -34,12 +34,13 @@ cite {
 }
 
 .cover {
-  height: 100%;
+  height: 100vh;
   background: url("../img/background-fullhd.jpg") no-repeat center bottom;
   background-size: cover;
   margin-bottom: 15px;
 }
 
+/* 4k background for screens bigger than 1080p*/
 @media screen and (min-height: 1081px) {
   .cover {
     background-image: url("../img/background-4k.jpg")
@@ -60,6 +61,23 @@ h2 {
 .horse {
   height: 20%;
   background-color: black;
+}
+
+.language-links {
+  padding-top: 5px;
+  text-align: right;
+  list-style-type: none;
+}
+
+.language-links li {
+  display: inline;
+  padding-right: 10px;
+}
+
+.language-links li a {
+  color: white;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 1rem;
 }
 
 .logo {
@@ -83,36 +101,4 @@ h2 {
 
 .row.last {
   margin-bottom: 20px;
-}
-
-@media only screen and (max-width: 40em) {
-  section.top-bar-section {
-    width: 100%;
-  }
-}
-
-@media not screen and (max-width: 40em) {
-  .top-bar ul.left {
-    display: none;
-  }
-}
-
-.top-bar, .top-bar-section ul li, .top-bar-section li:not(.has-form) a:not(.button) {
-  background: none;
-}
-
-@media only screen and (max-width: 40em) {
-  .top-bar-section li:not(.has-form) a:not(.button) {
-    background: #353535;
-    width: 100%;
-  }
-}
-
-.top-bar-section li:not(.has-form) a:not(.button):hover {
-    background: none;
-}
-
-
-.top-bar-section ul li > a {
-  font-family: "Droid Sans", sans-serif;
 }

@@ -92,8 +92,8 @@
     $("#img-logo").on("load",function() {
       setTimeout(function() {
         TweenMax.fromTo("#logo", 1.5,
-        {transform: 'scale(0.5)', opacity: 0},
-        {transform: 'scale(1)', opacity: 1},
+        {scale:0.5, y:0, opacity: 0},
+        {scale:1, y:"-10%", opacity: 1},
         Cubic.easeInOut);
       },150);
     }).each(function() {

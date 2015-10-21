@@ -24,6 +24,7 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.25rem;
+  border-bottom: 40px;
 }
 
 .center-content {
@@ -38,7 +39,7 @@ cite {
   height: 100vh;
   background: url("../img/background-fullhd.jpg") no-repeat center bottom;
   background-size: cover;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 /* 4k background for screens bigger than 1080p*/

@@ -42,6 +42,12 @@ cite {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 40em) {
+  .cover {
+    margin-bottom: 15px;
+  }
+}
+
 /* 4k background for screens bigger than 1080p*/
 @media screen and (min-height: 1081px) {
   .cover {
@@ -112,12 +118,19 @@ p {
 }
 
 .quotes {
-  margin: 40px 0 40px 0;
+  margin: 20px 0 40px 0;
   padding-top: 20px;
   padding-bottom: 20px;
   background-image: url("../img/quote-background.jpg");
   background-repeat: repeat;
   color: white;
+}
+
+@media screen only (max-width: 40em) {
+  .quotes {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .row.last {

@@ -84,6 +84,10 @@
   //http://stackoverflow.com/questions/5057990/how-can-i-check-if-a-background-image-is-loaded
   //http://stackoverflow.com/questions/3537469/detect-image-load
 
+  $(document).ready(function() {
+    $(".cover").height(jQuery(window).height());
+  });
+
   var bgurl = $(".cover").css("background-image");
   bgurl = bgurl.replace("url(","").replace(")","");
 

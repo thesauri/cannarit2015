@@ -136,6 +136,11 @@ ul {
   font-size: 1.25rem;
 }
 
+ul.language-links {
+  z-index: 100; /* To make the links clickable even though the logo covers the links*/
+  position: relative;
+}
+
 .quotes {
   margin: 20px 0 40px 0;
   padding-top: 20px;

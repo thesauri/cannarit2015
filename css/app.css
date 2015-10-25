@@ -59,6 +59,12 @@ cite {
   }
 }
 
+a.efterfest{
+  color: #222;
+  text-decoration: none;
+  cursor: default;
+}
+
 h2, h3, h5 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;

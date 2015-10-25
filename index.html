@@ -54,17 +54,17 @@
     <div class="small-12 medium-9 medium-centered columns">
       <div class="row">
         <div class="small-12 medium-4 quote-margin column">
-          <q>People who think they know everything are a great annoyance to those of us who do.<cite>&#8213; Isaac Asimov</cite></q>
+          <q>Cännärit on tietenkin (?) syksyn parhaat bileet<cite>&#8213; G. Gripenberg</cite></q>
         </div>
         <div class="small-12 medium-4 quote-margin columns">
-      <q>Always remember that you are absolutely unique. Just like everyone else.<cite>― Margaret Mead</cite></q>
-    </div>
-      <div class="small-12 medium-4 columns">
-      <q>I may be drunk, Miss, but in the morning I will be sober and you will still be ugly.<cite>&#8213; Winston Churchill</cite></q>
+          <q>Always remember that you absolutely bla bla<cite>― Margaret Mead</cite></q>
+        </div>
+        <div class="small-12 medium-4 columns">
+          <q>I may be dru bla bla bla bla öööööh dööö<cite>&#8213; Winston Churchill</cite></q>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
 </div>
 <div class="row">
   <div class="small-12 medium-9 medium-centered columns">
@@ -89,47 +89,47 @@
       <div class="small-12 medium-6 columns">
         <h5><address>Club Capital</address></h5>
         <iframe class="map"
-          frameborder="0" style="border:0"
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDpPAqrXfUmcdSE9kXFtAL5RGzp5sVN11s
-            &q=Club+Capital+Helsinki+Finland" allowfullscreen>
-        </iframe>
-      </div>
-      <div class="small-12 medium-6 columns">
-        <h5><address>Jatkot: Otakaari 20, iso puoli</address></h5>
-        <iframe class="map"
-          frameborder="0" style="border:0"
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDpPAqrXfUmcdSE9kXFtAL5RGzp5sVN11s
-            &q=Otakaari+20+Espoo+Finland" allowfullscreen>
-        </iframe>      </div>
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDpPAqrXfUmcdSE9kXFtAL5RGzp5sVN11s
+        &q=Club+Capital+Helsinki+Finland" allowfullscreen>
+      </iframe>
     </div>
+    <div class="small-12 medium-6 columns">
+      <h5><address>Jatkot: Otakaari 20, iso puoli</address></h5>
+      <iframe class="map"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDpPAqrXfUmcdSE9kXFtAL5RGzp5sVN11s
+      &q=Otakaari+20+Espoo+Finland" allowfullscreen>
+    </iframe>      </div>
+  </div>
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/jquery.waitforimages.min.js"></script>
-    <script>
-    $(document).foundation();
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/jquery.waitforimages.min.js"></script>
+  <script>
+  $(document).foundation();
 
-    //Start the animation once both the background and the logo has been loaded
-    //http://stackoverflow.com/questions/5057990/how-can-i-check-if-a-background-image-is-loaded
-    //http://stackoverflow.com/questions/3537469/detect-image-load
+  //Start the animation once both the background and the logo has been loaded
+  //http://stackoverflow.com/questions/5057990/how-can-i-check-if-a-background-image-is-loaded
+  //http://stackoverflow.com/questions/3537469/detect-image-load
 
-    $(document).ready(function() {
-      $(".cover").height(jQuery(window).height());
+  $(document).ready(function() {
+    $(".cover").height(jQuery(window).height());
+  });
+
+  $("#img-logo").waitForImages(function() {
+    $(".cover").waitForImages(function() {
+      setTimeout(function() {
+        TweenMax.fromTo("#logo", 1.5,
+        {scale:0.5, y:0, opacity: 0},
+        {scale:1, y:"-10%", opacity: 1},
+        Cubic.easeInOut);
+      },150);
     });
-
-    $("#img-logo").waitForImages(function() {
-      $(".cover").waitForImages(function() {
-        setTimeout(function() {
-          TweenMax.fromTo("#logo", 1.5,
-          {scale:0.5, y:0, opacity: 0},
-          {scale:1, y:"-10%", opacity: 1},
-          Cubic.easeInOut);
-        },150);
-      });
-    });
+  });
 
 
 
-    </script>
-  </body>
-  </html>
+  </script>
+</body>
+</html>
